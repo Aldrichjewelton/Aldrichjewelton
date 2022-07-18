@@ -12,43 +12,6 @@ spawn(function()
 			v:Remove()
 		end
 	end
-	local sky = Instance.new("Sky")
-	sky.StarCount = 5000
-	sky.SkyboxUp = "rbxassetid://9468074724"
-	sky.SkyboxLf = "rbxassetid://9468063157"
-	sky.SkyboxFt = "rbxassetid://9468061027"
-	sky.SkyboxBk = "rbxassetid://9468068462"
-	sky.SkyboxDn = "rbxassetid://9468081097"
-	sky.SkyboxRt = "rbxassetid://9468057091"
-	sky.SunTextureId = ""
-	sky.SunAngularSize = 11
-	sky.MoonTextureId = ""
-	sky.MoonAngularSize = 30
-	sky.Parent = game:GetService("Lighting")
-	local sunray = Instance.new("SunRaysEffect")
-	sunray.Intensity = 0.03
-	sunray.Parent = game:GetService("Lighting")
-	local bloom = Instance.new("BloomEffect")
-	bloom.Threshold = 2
-	bloom.Intensity = 1
-	bloom.Size = 2
-	bloom.Parent = game:GetService("Lighting")
-	local atmosphere = Instance.new("Atmosphere")
-	atmosphere.Density = 0.3
-	atmosphere.Offset = 0.25
-	atmosphere.Color = Color3.fromRGB(198, 198, 198)
-	atmosphere.Decay = Color3.fromRGB(104, 112, 124)
-	atmosphere.Glare = 0
-	atmosphere.Haze = 0
-	atmosphere.Parent = game:GetService("Lighting")
-end)
-local colors = {
-	SchemeColor = Color3.fromRGB(0,255,255),
-	Background = Color3.fromRGB(0, 0, 0),
-	Header = Color3.fromRGB(0, 0, 0),
-	TextColor = Color3.fromRGB(255,255,255),
-	ElementColor = Color3.fromRGB(20, 20, 20)
-}
 local kavoUi = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustDxrk/kavo-fixed-fuckers/main/Kavo%20Fixed"))()
 local window = kavoUi.CreateLib("Noboline ReMade", "BloodTheme")
 local entity = loadstring(game:HttpGet("https://raw.githubusercontent.com/JustDxrk/Vxpe-Entity/main/Vxpe%20Entity", true))()
